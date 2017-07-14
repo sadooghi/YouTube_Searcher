@@ -11,6 +11,9 @@
   max-width: 64px;
 }
 
+.video-detail {
+  padding-left: 50PX !important;
+}
 .video-detail .details {
   margin-top: 10px;
   padding: 10px;
@@ -18,10 +21,42 @@
   border-radius: 4px;
 }
 
+.list-group {
+  padding-right: 50px !important;
+}
 .list-group-item {
   cursor: pointer;
 }
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+
+.navbar {
+  background: #cc181e;
+  border-bottom: 1px solid black;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: white;
+  display: block;
+  float: left;
+  font-weight: 700;
+  font-size: 28px;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
 }

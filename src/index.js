@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import Navbar from './components/navbar';
 const API_KEY = process.env.YOUTUBE_KEY;
 
 class App extends Component {
@@ -34,6 +35,7 @@ videoSearch(term) {
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
     return (
       <div>
+        <Navbar />
         <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
